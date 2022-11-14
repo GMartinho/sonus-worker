@@ -7,8 +7,8 @@ logger = logging.getLogger()
 
 def get_celery_config():
     return {
-        'CELERY_BROKER_URL': 'redis://redis:6379/0',
-        'CELERY_RESULT_BACKEND': 'redis://redis:6379/0'
+        'CELERY_BROKER_URL': 'redis://:p3b8957d190ff7648c24992a1bef7a17270356a2ca80a21271be22c3de925b349@localhost:6379/0',
+        'CELERY_RESULT_BACKEND': 'redis://:p3b8957d190ff7648c24992a1bef7a17270356a2ca80a21271be22c3de925b349@localhost:6379/0'
     }
 
 

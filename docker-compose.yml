@@ -22,7 +22,7 @@ services:
             context: .
             dockerfile: Dockerfile
         container_name: celery_worker    
-        command: celery worker -A worker.celery --loglevel=info
+        command: celery -A worker.celery worker --pool threads --loglevel=info
         volumes:
             - .:/app/
         depends_on:
